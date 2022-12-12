@@ -1,6 +1,6 @@
 # Frank energie to InfluxDB scraper
 
-This simple script get's tomorrows prices from Frank Energie's GraphQL API, and writes them to InfluxDB.
+This simple script get's tomorrows prices from Frank Energie's GraphQL API, and writes them to InfluxDB. Currently only works for electricity prices.
 
 This repo is mainly intended for my own documentation uses. But feel free to use / adapt it to your needs.
 
