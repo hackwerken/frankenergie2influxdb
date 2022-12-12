@@ -1,0 +1,7 @@
+
+[influxdb]
+url = "http://influxdb.lan:8086"
+token = "mytoken"
+org = "myorg"
+bucket = "energy-prices"
+measurement = "energy-price"
