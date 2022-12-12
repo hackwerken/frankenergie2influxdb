@@ -1,0 +1,15 @@
+[Unit] 
+Description= Get Frank Energie prices
+Wants=network-online.target
+
+[Service] 
+Type=oneshot
+User=frankenergie
+
+
+WorkingDirectory= /home/frankenergie/frankenergie2influxdb
+ExecStart= /home/frankenergie/frankenergie2influxdb/virtenv/bin/python3 main.py -f config.toml
+
+[Install]
+WantedBy=multi-user.target
+
