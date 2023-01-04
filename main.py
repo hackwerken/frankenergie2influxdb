@@ -47,9 +47,14 @@ def main():
             .field("energyTaxPrice", energy_tax_price) \
             .field("allIn", all_in)
 
-        influx_api.write(config_influx["bucket"], config_influx["org"], point)
+        try:
+            print("Writing", time, all_in)
+            influx_api.write(config_influx["bucket"], config_influx["org"], point)
+        except:
+            print("failed!")
+            pass
 
-        print("Writing", time, all_in)
+
 
 if __name__ == "__main__":
     main()
