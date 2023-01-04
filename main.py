@@ -29,10 +29,10 @@ def main():
 
     for entry in prices:
         time = entry["from"]
-        market_price = entry["marketPrice"]
-        market_price_tax = entry["marketPriceTax"]
-        sourcing_markup_price = entry["sourcingMarkupPrice"]
-        energy_tax_price = entry["energyTaxPrice"]
+        market_price = float(entry["marketPrice"])
+        market_price_tax = float(entry["marketPriceTax"])
+        sourcing_markup_price = float(entry["sourcingMarkupPrice"])
+        energy_tax_price = float(entry["energyTaxPrice"])
         all_in = market_price + \
             market_price_tax +  \
             sourcing_markup_price + \
